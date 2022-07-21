@@ -6,6 +6,11 @@ float ellipseDisplayX, ellipseDisplayY, ellipseDisplayXdiameter, ellipseDisplayY
 color black=#000000; //Night Mode Friendly
 Boolean rectON=false, ellipseON=false;
 //
+String buttonText1= "Click Me";
+String buttonText2= "Or Me";
+PFont buttonFont;
+color purple = #2C08FF; //Note Night Mode Friendly, all of the blue is included
+//
 void setup()
 {
   //Display Geometry
@@ -70,6 +75,10 @@ void keyPressed() {
 }//End keyPressed
 //
 void mousePressed() {
+  //rectON=false;
+  ellipseON=false;
+  if ( mouseX>=buttonX1 && mouseX<=buttonX1+buttonWidth1 && mouseY>=buttonY1 && mouseY<=buttonY1+buttonHeight1 ) rectON=true;
+  if ( mouseX>=buttonX2 && mouseX<=buttonX2+buttonWidth2 && mouseY>=buttonY2 && mouseY<=buttonY2+buttonHeight2 ) ellipseON=true;
 }//End mousePressed
 //
 //End MAIN Prograw
