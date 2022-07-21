@@ -74,7 +74,15 @@ void draw()
   if ( rectON==true ) rect( rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight ); //Button 1
   if ( ellipseON==true ) ellipse( ellipseDisplayX, ellipseDisplayY, ellipseDisplayXdiameter, ellipseDisplayYdiameter ); //Button 2
   //
-  //Text for Buttons
+  //Text Draw, General Code for any text
+  //Note: visualization rectangle is in main program
+  fill(purple); //Ink, hexidecimal copied from Color Selector
+  textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(buttonFont, 25); //Change the number until it fits, largest font size
+  //
+  
+  //
 }//End draw
 //
 void keyPressed() {
