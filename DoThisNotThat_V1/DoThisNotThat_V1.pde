@@ -13,7 +13,11 @@ void setup()
     appHeight = displayHeight;
     println("CANVAS needed to be readjusted to fit on your monitor.");
   } else {
+    println("CANVAS is Good to go on your display.")
   }//End CANVAS in Display Checker
+  //Display Orientatin
+  String ls="Landscape or Square", p="portraint", DO="Display Orientation", instruct="Bru, turn your phun";
+  
 }//End setup
 //
 void draw()
