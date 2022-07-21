@@ -1,11 +1,29 @@
 //Global Variables
 //
-void setup() {}//End setup
+void setup()
+{
+  //Display Geometry
+  size(600, 400); //Landscape
+  println (width, height, displayWidth, displayHeight);
+  int appWidth = width;
+  int appHeight = height;
+  if ( width > displayWidth || height > displayHeight ) { //CANVAS in Display Checker
+    //CANVAS Too Big
+    appWidth = displayWidth;
+    appHeight = displayHeight;
+    println("CANVAS needed to be readjusted to fit on your monitor.");
+  } else {
+  }//End CANVAS in Display Checker
+}//End setup
 //
-void draw() {}//End draw
+void draw()
+{
+}//End draw
 //
-void keyPressed() {}//End keyPressed
+void keyPressed() {
+}//End keyPressed
 //
-void mousePressed() {}//End mousePressed
+void mousePressed() {
+}//End mousePressed
 //
 //End MAIN Prograw
