@@ -17,7 +17,7 @@ void setup()
   }//End CANVAS in Display Checker
   //Display Orientatin
   String ls="Landscape or Square", p="portraint", DO="Display Orientation", instruct="Bru, turn your phun";
-  
+  String orientation = () ? true : false; //Ternary Operator, repeats the IF-Else structure to populate a variable
 }//End setup
 //
 void draw()
