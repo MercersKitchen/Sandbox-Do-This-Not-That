@@ -33,6 +33,13 @@ void setup()
 //
 void draw()
 {
+  background(black);
+  rect();
+  rect();
+  rect(); //Button 1
+  ellipse(); //Button 2
+  //
+  //Text for Buttons
 }//End draw
 //
 void keyPressed() {
