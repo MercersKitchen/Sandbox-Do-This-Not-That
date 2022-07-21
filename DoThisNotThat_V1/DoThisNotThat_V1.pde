@@ -3,7 +3,7 @@ float buttonX1, buttonY1, buttonWidth1, buttonHeight1;
 float buttonX2, buttonY2, buttonWidth2, buttonHeight2;
 float rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight;
 float ellipseDisplayX, ellipseDisplayY, ellipseDisplayXdiameter, ellipseDisplayYdiameter;
-color black=#000000; //Night Mode Friendly
+color black=#000000, white=#FFFFE1; //Night Mode Friendly
 Boolean rectON=false, ellipseON=false;
 //
 String buttonText1= "Click Me";
@@ -81,7 +81,10 @@ void draw()
   //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
   textFont(buttonFont, 25); //Change the number until it fits, largest font size
   //
-  
+  //Specific Text per button
+  text(buttonText1, buttonX1, buttonY1, buttonWidth1, buttonHeight1);
+  text(buttonText2, buttonX2, buttonY2, buttonWidth2, buttonHeight2);
+  fill(white); //Will change the fill() on all shapes the second time repeated in draw()
   //
 }//End draw
 //
